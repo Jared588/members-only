@@ -18,7 +18,6 @@ const mongoDB = process.env.MONGO_URI;
 main().catch((err) => console.log(err));
 async function main() {
   await mongoose.connect(mongoDB);
-  console.log(`connected at ${mongoose.connection.host}`)
 }
 
 // view engine setup
