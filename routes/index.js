@@ -13,6 +13,12 @@ router.get("/", function (req, res, next) {
 router.get("/register", user_controller.user_create_get);
 
 // POST request for creating a user
-router.post("/register", user_controller.user_create_post)
+router.post("/register", user_controller.user_create_post);
+
+// GET request for login page
+router.get("/login", user_controller.user_login_get);
+
+// POST request for login page
+router.post("/login", user_controller.user_login_post);
 
 module.exports = router;
