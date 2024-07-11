@@ -2,10 +2,12 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/tailwind.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome <%= currentUser ? currentUser.username : '' %></p>
+    <header>
+      <h1 class="underline""><%= title %></h1>
+      <p>Welcome <%= currentUser ? currentUser.username : '' %></p>
+    </header>
   </body>
 </html>
