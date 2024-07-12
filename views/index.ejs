@@ -10,7 +10,10 @@
       <% if (!currentUser) { %>
         <a href="/login" class="text-slate-300 text-xl self-center">Log In</a>
       <% } else { %>
-        <p class="text-xl text-slate-400">Welcome, <%= currentUser.username %></p>
+        <div class="flex">
+          <p class="text-xl text-slate-400 self-center">Welcome, <%= currentUser.username %></p>
+          <a href="/logout" class="text-slate-300 text-xl self-center">Log out</a>
+        </div>
       <% } %>
     </header>
     <div>

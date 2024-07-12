@@ -98,3 +98,11 @@ exports.user_login_post = [
     res.redirect("/");
   },
 ];
+
+// handle logout
+exports.user_logout = asyncHandler((req, res, next) => {
+  req.logout((err) => {
+    if (err) { return next(err); }
+    res.redirect('/');
+  });
+});
