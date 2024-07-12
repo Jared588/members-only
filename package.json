@@ -6,7 +6,7 @@
     "start": "node ./bin/www",
     "devstart": "nodemon ./bin/www",
     "serverstart": "DEBUG=members-only:* npm run devstart",
-    "build:css": "tailwindcss build public/stylesheets/style.css -o public/stylesheets/tailwind.css"
+    "build:css": "tailwindcss build public/stylesheets/style.css -o public/stylesheets/tailwind.css --watch"
   },
   "dependencies": {
     "autoprefixer": "^10.4.19",
